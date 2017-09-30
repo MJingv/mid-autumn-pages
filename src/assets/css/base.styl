@@ -1,0 +1,151 @@
+@import './normalize.styl';
+
+html,body
+  padding: 0px
+  margin: 0px
+  height: 100%
+
+*
+  box-sizing: border-box
+  -webkit-tap-highlight-color: transparent
+  outline:none
+  &:after
+    box-sizing: border-box
+  &:before
+    box-sizing: border-box
+
+input
+  outline:none
+  border:0px
+  padding: 0px
+
+.border-bottom-1px
+  position: relative
+  &:after
+    content:''
+    left: 0px
+    right: 0px
+    height: 1px
+    height: 1px
+    background: rgba(0,0,0,.2)
+    transform: scaleY(.5)
+
+ul,ol,p
+  padding: 0px
+  margin: 0px
+  list-style: none
+  overflow: hidden
+.btn
+  // margin:20px;
+  height: 50px
+  line-height: 50px
+  text-align: center
+  font-family: NotoSansCJKsc-Regular
+  font-size: 18px
+  color: #FFFFFF
+  background: #212328
+  border-radius: 4px
+  width: 100%
+  border: 0px
+  padding: 0px
+  display: block;
+.picker
+  z-index: 1000 !important  //better-picker  组件样式
+clearfix()
+  &:before
+  &:after
+    content ' '
+    display table
+  &:after
+    clear both
+.clearfix
+  clearfix()
+
+
+.fadeInRight-appear,.fadeInRight-enter-active,.fadeInRight-leave-active
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-play-state: paused
+.fadeInRight-appear,.fadeInRight-enter-active
+  animation-name: fadeInRight;
+  animation-play-state: running
+.fadeInRight-leave-active
+  animation-name: fadeOutRight;
+  animation-play-state: running
+.fadeInRight-appear,.fadeInRight-enter-active
+  opacity: 0
+.fadeInRight-appear,.fadeInRight-enter-active,.fadeInRight-leave-active
+  animation-timing-function: linear
+@keyframes fadeInRight
+  from
+    opacity: 1;
+    transform: translate3d(100%, 0, 0);
+  to
+    opacity: 1;
+    transform: none;
+@keyframes fadeOutRight
+  from
+    opacity: 1;
+    transform: none;
+  to
+    opacity: 1;
+    transform: translate3d(100%, 0, 0);
+
+.fadeInUp-appear,.fadeInUp-enter-active,.fadeInUp-leave-active
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-play-state: paused
+.fadeInUp-appear,.fadeInUp-enter-active
+  animation-name: fadeInUp;
+  animation-play-state: running
+.fadeInUp-leave-active
+  animation-name: fadeOutUp;
+  animation-play-state: running
+.fadeInUp-appear,.fadeInUp-enter-active
+  opacity: 0
+.fadeInUp-appear,.fadeInUp-enter-active,.fadeInUp-leave-active
+  animation-timing-function: linear
+@keyframes fadeInUp
+  from
+    opacity: 1;
+    transform: translate3d(0, 100%, 0);
+  to
+    opacity: 1;
+    transform: none;
+@keyframes fadeOutUp
+  from
+    opacity: 1;
+    transform: none;
+  to
+    opacity: 1;
+    transform: translate3d(0, 100%, 0);
+
+.fade-appear,.fade-enter-active,.fade-leave-active
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-play-state: paused
+.fade-appear,.fade-enter-active
+  animation-name: fadeIn;
+  animation-play-state: running
+
+.fade-leave-active
+  animation-name: fadeOut;
+  animation-play-state: running
+
+.fade-appear,.fade-enter-active
+  opacity: 0
+
+.fade-appear,.fade-enter-active,.fade-leave-active
+  animation-timing-function: linear
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes fadeOut
+  0%
+    opacity: 1
+  to
+    opacity: 0
