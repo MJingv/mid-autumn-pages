@@ -32,4 +32,12 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
           x: 50,
           ease: Elastic.InOut
         },0.5)//延迟0.5s
+        
+        
+        
+    this.motionObj[1].from('.wrap', 7, {
+        repeate: 1,
+        rotation: -100,
+        ease: Elastic.easeOut//实现弹簧效果
+      })
 ```
