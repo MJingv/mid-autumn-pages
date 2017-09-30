@@ -24,11 +24,12 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 # 动画制作（css3+gsap）
 
 ⚠️attention！
-
+``` bash
   this.motionObj[0]
       .staggerFrom(//让数组元素分别出现
         ['.p1t1', '.p1t2', '.p1t3', '.p1t4', '.p1t5'], 1, {
           opacity: 0,
           x: 50,
           ease: Elastic.InOut
-        },0.5)//延迟0.5s
+        },0.5)//延迟0.5s
+```
